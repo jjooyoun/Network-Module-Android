@@ -68,10 +68,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startTestATransactionService() {
+        // TODO
         Intent intent = new Intent(MainActivity.this, TransactionService.class);
         intent.putExtra(TransactionBundle.TRANSACTION_TYPE, Transaction.TEST_A_TRANSACTION);
-        intent.putExtra(TestDataHeader.HEADER_TEST_A_EMAIL, "yinuozha@usc.edu");
-        intent.putExtra(TestDataHeader.HEADER_TEST_A_PASSWORD, "111111");
+        intent.putExtra(TestDataHeader.HEADER_TEST_A_EMAIL, "");
+        intent.putExtra(TestDataHeader.HEADER_TEST_A_PASSWORD, "");
         startService(intent);
     }
 
